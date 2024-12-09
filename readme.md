@@ -32,5 +32,5 @@ Welcome to the **E-Commerce Platform** repository! This project is a robust and 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/e-commerce-platform.git
-   cd e-commerce-platform
+   git clone https://github.com/ashok07-ai/spring-boot-ecommerce-application-backend
+   cd spring-boot-ecommerce-application-backend
