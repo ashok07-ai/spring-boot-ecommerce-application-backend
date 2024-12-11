@@ -33,7 +33,7 @@ public class CategoryController {
         return new ResponseEntity<>("Category created successfully!", HttpStatus.CREATED);
     }
 
-    @PutMapping("/admin/categories{categoryId}")
+    @PutMapping("/admin/categories/{categoryId}")
     public ResponseEntity<String> updateCategory(@RequestBody Category category, @PathVariable Long categoryId){
         System.out.println("hello");
         try{
