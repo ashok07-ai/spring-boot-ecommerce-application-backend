@@ -20,10 +20,10 @@ Welcome to the **E-Commerce Platform** repository! This project is a robust and 
 
 - **Backend Framework**: Spring Boot
 - **Database**: PostgreSQL
-- **ORM**: Hibernate/JPA
+- **ORM**: JPA
 - **Security**: Spring Security with JWT
 - **API Documentation**: Swagger
-- **Build Tool**: Maven/Gradle
+- **Build Tool**: Maven
 - **Java Version**: Java 21+
 
 ---
