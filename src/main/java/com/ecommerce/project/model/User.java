@@ -16,7 +16,8 @@ import java.util.Set;
 @NoArgsConstructor
 @Table(name = "users",
             uniqueConstraints = {
-            @UniqueConstraint(columnNames = "username"), @UniqueConstraint(columnNames = "email")
+                    @UniqueConstraint(columnNames = "username"),
+                    @UniqueConstraint(columnNames = "email")
             })
 public class User {
     @Id
@@ -56,6 +57,10 @@ public class User {
     @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "user_address", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "address_id"))
     private List<Address> addresses = new ArrayList<>();
+
+    @ToString.Exclude
+    @OneToOne(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, orphanRemoval = true)
+    private Cart cart;
 
     @ToString.Exclude
     @OneToMany(mappedBy = "user",
